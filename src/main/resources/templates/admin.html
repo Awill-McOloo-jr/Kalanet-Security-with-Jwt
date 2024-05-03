@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Home Page</title>
+  <style>
+    /* Common styles for light and dark mode */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Light mode */
+    .light-mode {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .light-mode .toggle-btn {
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Dark mode */
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .dark-mode .toggle-btn {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Toggle button */
+    .toggle-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body class="light-mode">
+<div class="container">
+  <h1>Admin Home Page</h1>
+  <p>Welcome to your home page!</p>
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
+</div>
+
+<script>
+  function toggleMode() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+  }
+</script>
+</body>
+</html>
